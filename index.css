@@ -1,0 +1,74 @@
+body div.conteudo img {
+  width: 86px;
+  height: 86px;
+}
+
+body div.conteudo img[alt^='pessoa'] {
+  background: blue;
+}
+
+body div.conteudo img + img {
+  background-color: burlywood;
+}
+
+body div.conteudo2 {
+  display: flex;
+  column-gap: 15px;
+  flex-wrap: wrap;
+}
+
+body div.conteudo2  h1 {
+  min-width: 50px;
+  background-color: yellow;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 26px;
+  line-height: 26px;
+  cursor: cell;
+}
+
+body div.conteudo2 h1:hover {
+  background-color: chartreuse !important;
+}
+
+body div.conteudo2 h1:nth-child(2n-1) {
+  background-color: brown;
+  color: white;
+}
+
+body div.conteudo2 h1:first-child {
+  background: blue;
+}
+
+body div.conteudo2 h1:last-child {
+  background: red;
+}
+
+body div.conteudo3 {
+  display: flex;
+  column-gap: 10px;
+}
+
+body div.conteudo3 > h5 {
+  background-color: aquamarine;
+  width: 90px; 
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  cursor: cell;
+}
+
+body div.conteudo3 h5 ~ h5 {
+  background-color: orangered;
+}
+
+body div.conteudo3 h5:hover {
+  background-color: chocolate;
+  cursor: pointer;
+}
